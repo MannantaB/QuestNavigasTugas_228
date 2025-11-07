@@ -32,10 +32,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.questnavigastugas_228.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FormDataDiri(modifier: Modifier
+fun FormDataDiri(
+    onBackToBtnClick: () -> Unit
 ) {
     var textNama by remember { mutableStateOf(value = "") }
     var textAlamat by remember { mutableStateOf(value = "") }
@@ -171,6 +173,7 @@ fun FormDataDiri(modifier: Modifier
                     onClick = {
                         jenis = textJK
                         status = textStatus
+                        onBackToBtnClick()
                     }
                 ){
                     Text(text = stringResource(id = R.string.submit))
