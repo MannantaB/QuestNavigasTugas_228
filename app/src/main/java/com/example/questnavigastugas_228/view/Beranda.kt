@@ -26,6 +26,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.questnavigastugas_228.R
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -38,7 +39,7 @@ fun HomePage(
         Column (
             modifier = Modifier
                 .fillMaxSize()
-                .background(color = Color(0xFFD8B4FE))
+                .background(color = Color(0xFFF9EDFC))
                 .padding(paddingValues = isiRuang),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
