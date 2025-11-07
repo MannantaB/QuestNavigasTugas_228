@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestNavigasTugas_228Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    HomeApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
